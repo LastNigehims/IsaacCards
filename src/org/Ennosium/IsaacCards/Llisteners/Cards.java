@@ -31,8 +31,8 @@ public abstract class Cards implements Listener {
 		if ( p.getItemInHand().getType() == Material.PAPER && p.getItemInHand().getItemMeta().getDisplayName()
 				.equals(ChatColor.translateAlternateColorCodes('&', name)))
 			;
-		e.getPlayer().sendMessage("Card not uses functions.");
-		e.getPlayer().sendMessage(
+		p.sendMessage("Card not uses functions.");
+		p.sendMessage(
 				"More information you can get from a developer add-on.");
 	}
 
